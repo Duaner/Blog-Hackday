@@ -26,10 +26,6 @@ a {
   font-family: "proxima-nova", Arial, sans-serif;
 }
 
-h1, h2 {
-  font-weight: bold;
-}
-
 pre, ul {
   margin-bottom: 20px;
 }
@@ -250,6 +246,32 @@ pre, ul {
   height: 100vh;
 }
 
+.blog-post .container {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.blog-post .left {
+  width: 65%;
+}
+
+.blog-post .right {
+  width: 15%;
+}
+
+.blog-post .right img {
+  position: absolute;
+  max-width: 750px;
+  right: -300px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 .blog-post .shortlede {
   display: inline-block;
   font-family: 'Lora', serif;
@@ -276,7 +298,7 @@ pre, ul {
 }
 
 .blog-post-title a {
-  font-size: 70px;
+  font-size: 62px;
   color: #FFFFFF;
   line-height: 67px;
   font-weight: 300;

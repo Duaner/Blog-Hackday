@@ -99,6 +99,16 @@ function the_title()
     }
 }
 
+function the_title_spans()
+{
+    global $loop;
+    $doc = $loop->current_post();
+    if ($doc) {
+        echo $doc->getStructuredText($doc->getType().'.title')->asHtml();
+    }
+
+}
+
 function project_name()
 {
     global $loop;
@@ -217,6 +227,21 @@ function post_thumbnail_url($size = 'main')
         return;
     }
     $image = $doc->getImage($doc->getType().'.image');
+    if ($image) {
+        return $image->getView($size)->getUrl();
+    }
+}
+
+function imgBandeau($size = 'main'){
+    global $WPGLOBAL, $loop;
+    $doc = $loop->current_post();
+    if ($size == 'full') {
+        $size = 'main';
+    }
+    if (!$doc) {
+        return;
+    }
+    $image = $doc->getImage($doc->getType().'.imagetransparent');
     if ($image) {
         return $image->getView($size)->getUrl();
     }
