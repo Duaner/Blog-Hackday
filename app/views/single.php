@@ -76,6 +76,7 @@
 
 
     <div class="wrapper">
+      <div class="container">
 
        <?= single_post_title(); ?>
 
@@ -86,7 +87,7 @@
        <p class="meta">
          <?php single_post_date(); ?><?php single_post_author(); ?>
        </p>
-
+     </div>
     </div>
 </div>
 
