@@ -10,9 +10,13 @@
 
   <div class="wrapper">
 
-    <?= blog_home_title_spans() ?>
+    <div class="container">
 
-    <p class="lead blog-description"><?= blog_home_description() ?></p>
+      <?= blog_home_title_spans() ?>
+
+      <p class="lead blog-description"><?= blog_home_description() ?></p>
+
+    </div>
 
   </div>
 

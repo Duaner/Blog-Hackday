@@ -148,12 +148,14 @@ a {
 }
 
 #menu-hamburger {
+  display: none;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 120px;
+  top: 60px;
   z-index: 2;
+  padding: 0 !important;
   color: white;
-  text-shadow: 0 0 2px black;
+  text-shadow: 0 0 1px 0 black;
 }
 
 #menu-hamburger::before {
@@ -269,11 +271,12 @@ a {
   z-index: 2;
   border-radius: 50%;
   background: #FFF !important;
-  box-shadow: 0 0 2px black;
+  box-shadow: 0 0 1px 0 black;
 }
 
 .main > .wio-link img {
-  padding: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 .blog-post[data-wio-id]:hover .wio-link {
