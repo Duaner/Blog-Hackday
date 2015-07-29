@@ -16,7 +16,7 @@ a {
 .blog-main h4, .blog-main .h4,
 .blog-main h5, .blog-main .h5,
 .blog-main h6, .blog-main .h6 {
-  color: #2F3163;
+  
   text-align: left;
 }
 
@@ -108,30 +108,6 @@ pre, ul {
 
 /* Blog header for single blog post. */
 
-.blog-header.single::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.2);
-}
-
-.blog-header.single::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,0.05) 80%, rgba(0,0,0,0.1) 90%, rgba(0,0,0,0.2) 100%);
-  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,0.05) 80%, rgba(0,0,0,0.1) 90%, rgba(0,0,0,0.2) 100%);
-  background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,0.05) 80%, rgba(0,0,0,0.1) 90%, rgba(0,0,0,0.2) 100%);
-  background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,0.05) 80%, rgba(0,0,0,0.1) 90%, rgba(0,0,0,0.2) 100%);
-  background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,0.05) 80%, rgba(0,0,0,0.1) 90%, rgba(0, 0, 0, 0.2) 100%);
-}
-
 .blog-header .date + .author::before {
   content: ',';
   padding-right: 6px;
@@ -169,6 +145,11 @@ pre, ul {
   background-color: #FFF;
   position: relative;
   border: none;
+}
+
+#main_img{
+  display: block;
+  width: 100%;
 }
 
 .blog-header.author .image::before {
@@ -560,8 +541,22 @@ pre, ul {
 @media screen and (min-width: 768px) {
 
   h1 {
-    line-height: 60px;
-    font-size: 60px;
+    line-height: 67px;
+    font-size: 70px; 
+  }
+
+  .blog-header h1{
+    margin-bottom: 40px;
+    font-weight: 200;
+  }
+
+  .blog-header h1 strong{
+    font-weight: 900;
+  }
+
+  .shortlede{
+    font-size: 20px;
+    line-height: 27px;
   }
 
   h2 {

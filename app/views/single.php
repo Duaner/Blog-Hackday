@@ -30,9 +30,25 @@
     <link rel="stylesheet" href="/assets/vendor/disqium/disqium.css" />
     <script src="/assets/vendor/disqium/disqium.js"></script>
 
+    <?php full_articles(true) ?>
+    <?php rewind_posts(); ?>
+    <?php while ( have_posts() ) : the_post(); ?>
+
     <?php include('prismic.php') ?>
 
     <?php include('skin/blog.php') ?>
+
+    <style type="text/css">
+      .blog-main h1, .blog-main .h1,
+      .blog-main h2, .blog-main .h2,
+      .blog-main h3, .blog-main .h3,
+      .blog-main h4, .blog-main .h4,
+      .blog-main h5, .blog-main .h5,
+      .blog-main h6, .blog-main .h6 {
+        color: <?= getColor(); ?>
+      }
+
+    </style>
 
 </head>
 
@@ -49,9 +65,7 @@
 
         <a id="menu-hamburger" href="#right-panel"></a>
 
-<?php full_articles(true) ?>
-<?php rewind_posts(); ?>
-<?php while ( have_posts() ) : the_post(); ?>
+
 
 <?php
 
@@ -60,6 +74,7 @@
 ?>
 
 <div class="blog-header single" style="background:<?= getColor(); ?>">
+
 
     <div class="wrapper">
 
@@ -76,9 +91,13 @@
     </div>
 </div>
 
+
+<img id="main_img" src="<?= $headerImageUrl ? $headerImageUrl : '' ?>"/>
+
+
 <div class="blog-main single container">
 
-    <?php the_content(); ?>
+    <?php page_content(); ?>
 
     <?php include('social.php'); ?> 
 
