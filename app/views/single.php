@@ -38,6 +38,7 @@
 
 <body>
 
+
     <div id="right-panel">
 
         <?php get_sidebar(); ?>
@@ -58,11 +59,11 @@
 
 ?>
 
-<div class="blog-header single" style="<?= $headerImageUrl ? 'background-image: url('.$headerImageUrl.')' : '' ?>">
+<div class="blog-header single" style="background:<?= getColor(); ?>">
 
     <div class="wrapper">
 
-       <h1><?= single_post_title(); ?></h1>
+       <?= single_post_title(); ?>
 
        <p class="description">
          <?php single_post_shortlede(); ?>

@@ -320,12 +320,22 @@ function single_post_title($prefix = '', $display = true)
     if (!single_post()) {
         return;
     }
-    $result = $prefix . single_post()->getText(single_post()->getType() . '.title');
+    $result = $prefix . single_post()->getStructuredText(single_post()->getType() . '.title')->asHtml();
     if ($display) {
-        echo htmlentities($result);
+        return $result;
     } else {
         return $result;
     }
+}
+
+function getColor(){
+    global $WPGLOBAL, $loop;
+    $prismic = $WPGLOBAL['prismic'];
+    $doc = $loop->current_post();
+    if (!$doc) {
+        return;
+    }
+    return $doc->getColor('post.color')->getHexValue();
 }
 
 function single_post_shortlede_text()
