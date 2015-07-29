@@ -45,7 +45,9 @@
       .blog-main h4, .blog-main .h4,
       .blog-main h5, .blog-main .h5,
       .blog-main h6, .blog-main .h6 {
-        color: <?= getColor(); ?>
+        color: <?= getColor(); ?> ;
+        text-transform: uppercase;
+        font-size: 30px;
       }
 
     </style>

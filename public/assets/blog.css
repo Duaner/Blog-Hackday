@@ -1,5 +1,5 @@
 body {
-  color: #5D5F86;
+  color: #686868;
 }
 
 a {
@@ -16,7 +16,6 @@ a {
 .blog-main h4, .blog-main .h4,
 .blog-main h5, .blog-main .h5,
 .blog-main h6, .blog-main .h6 {
-  
   text-align: left;
 }
 
@@ -33,7 +32,7 @@ pre, ul {
 }
 
 .container {
-  max-width: 700px;
+  max-width: 820px;
   margin: auto;
   padding: 70px 26px 0 26px;
 }
@@ -742,6 +741,23 @@ pre, ul {
 
   .blog-header .meta {
     font-size: 16px;
+  }
+
+  .section-header-col-2-centered p{
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+    font-size: 18px;
+    color: #686868;
   }
 }
 
