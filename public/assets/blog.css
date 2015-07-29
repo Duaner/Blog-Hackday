@@ -24,6 +24,7 @@ a {
 .blog-main h6, .blog-main .h6 {
   text-align: left;
   font-family: "proxima-nova", Arial, sans-serif;
+  margin-bottom: 20px;
 }
 
 pre, ul {
@@ -984,6 +985,14 @@ html:not(.ie) .flex-container {
     width: 46%;
     margin: 2%;
   }
+  .featured-items h3,.featured-items p{
+    text-align: center;
+  }
+
+  .blog-main .featured-items h3{
+    font-size: 24px;
+  }
+
 .featured-items .illustration{
     margin: 0 auto;
     width: 120px;
