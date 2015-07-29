@@ -16,6 +16,15 @@ a {
   background-position: 0 23px;
 }
 
+.logo img {
+  position: fixed;
+  z-index: 1000;
+  left: 125px;
+  top: 125px;
+  height: 60px;
+  width: 60px;
+}
+
 .blog-main h1, .blog-main .h1,
 .blog-main h2, .blog-main .h2,
 .blog-main h3, .blog-main .h3,

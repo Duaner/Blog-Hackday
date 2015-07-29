@@ -24,4 +24,6 @@
     </div>
 
     <div class="main" <?= the_wio_attributes(); ?>>
+        <div class="logo"><img src="assets/images/logo.png" alt=""></div>
+
         <a id="menu-hamburger" href="#right-panel"></a>
