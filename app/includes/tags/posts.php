@@ -99,6 +99,15 @@ function the_title()
     }
 }
 
+function project_name()
+{
+    global $loop;
+    $doc = $loop->current_post();
+    if ($doc) {
+        echo htmlentities($doc->getText($doc->getType().'.project-name'));
+    }
+}
+
 function the_title_attribute()
 {
     return the_title();

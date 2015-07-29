@@ -254,6 +254,17 @@ function blog_home_title()
     return blog_home()->getText('bloghome.headline');
 }
 
+function blog_home_title_spans()
+{
+    global $WPGLOBAL;
+    $prismic = $WPGLOBAL['prismic'];
+    if (!blog_home()) {
+        return '';
+    }
+
+    return blog_home()->getStructuredText('bloghome.headline')->asHtml();
+}
+
 function blog_home_description()
 {
     global $WPGLOBAL;

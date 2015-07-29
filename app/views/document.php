@@ -18,9 +18,6 @@
     <script src="/assets/slices.js"></script>
 
     <?php include('prismic.php') ?>
-
-    <?php include('skin/page.php') ?>
-
 </head>
 
 <body class="">

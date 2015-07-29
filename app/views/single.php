@@ -36,8 +36,6 @@
 
     <?php include('prismic.php') ?>
 
-    <?php include('skin/blog.php') ?>
-
     <style type="text/css">
       .blog-main h1, .blog-main .h1,
       .blog-main h2, .blog-main .h2,
@@ -51,7 +49,6 @@
       }
 
     </style>
-
 </head>
 
 <body>

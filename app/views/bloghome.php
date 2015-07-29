@@ -10,7 +10,7 @@
 
   <div class="wrapper">
 
-    <h1 class="blog-title"><?= blog_home_title() ?></h1>
+    <?= blog_home_title_spans() ?>
 
     <p class="lead blog-description"><?= blog_home_description() ?></p>
 
@@ -18,7 +18,7 @@
 
 </div>
 
-<div class="container blog-main">
+<div class="blog-main">
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

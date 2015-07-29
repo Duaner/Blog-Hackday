@@ -1,24 +1,18 @@
 
-<div class="blog-post" <?= the_wio_attributes() ?>>
+<div class="blog-post" <?= the_wio_attributes() ?> style="background-color: <?= getColor();?>">
 
-    <h2 class="blog-post-title">
+    <div class="container">
 
-        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+        <h3 class="blog-post-name"><?= project_name(); ?></h3>
 
-    </h2>
+        <h2 class="blog-post-title">
 
-    <p class="blog-post-meta">
+            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 
-        <?= the_date_link() ?>
+        </h2>
 
-        <?= the_author_link() ?>
+        <?php single_post_shortlede(); ?>
 
-        <?php the_category(', ') ?>
-
-        <?php the_tags('', ', ') ?>
-
-    </p>
-
-    <?php the_content() ?>
+    </div>
 
 </div>

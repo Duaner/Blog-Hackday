@@ -9,9 +9,6 @@
     <script src="/assets/vendor/jquery-1.11.2.min.js"></script>
 
     <?php include('prismic.php') ?>
-
-    <?php include('skin/errorpage.php') ?>
-
 </head>
 
 <body class="error-page">
