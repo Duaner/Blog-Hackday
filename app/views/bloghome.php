@@ -29,7 +29,5 @@
 <?php endif; ?>
 
 </div>
-<!-- Handle footer -->
-<script src="/assets/blog.js"></script>
 
 <?php get_footer() ?>

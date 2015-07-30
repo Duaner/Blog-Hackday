@@ -23,18 +23,6 @@
 
     <script src="/assets/vendor/jquery-1.11.2.min.js"></script>
 
-    <!-- disqus integration -->
-    <?php if(disqus_forum()): ?>
-    <script type="application/javascript">
-      $(document).ready(function() {
-          window.disqium = Disqium('.blog-main.single');
-      });
-    </script>
-    <?php endif ?>
-
-    <link rel="stylesheet" href="/assets/vendor/disqium/disqium.css" />
-    <script src="/assets/vendor/disqium/disqium.js"></script>
-
     <?php full_articles(true) ?>
     <?php rewind_posts(); ?>
     <?php while ( have_posts() ) : the_post(); ?>
@@ -53,7 +41,6 @@
         font-size: 30px;
         font-family: "proxima-nova", Arial, sans-serif;
       }
-
     </style>
 </head>
 
@@ -136,17 +123,6 @@
             <?php endif ?>
 
         </footer>
-
-    <!-- Hamburger menu -->
-    <script src="/assets/vendor/jquery.panelslider.js"></script>
-
-    <script type="text/javascript">
-
-      $(document).ready(function() {
-        $('#menu-hamburger').panelslider({side: 'right', duration: 200 });
-      });
-
-    </script>
 
     <!-- Handle footer -->
     <script src="/assets/blog.js"></script>
