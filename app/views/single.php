@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/assets/social.css">
     <link rel="stylesheet" href="/assets/font.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
 
     <script src="//use.typekit.net/qby6wbi.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
@@ -89,9 +90,9 @@
          <?php single_post_shortlede(); ?>
        </p>
 
-       <p class="meta">
+       <!-- <p class="meta">
          <?php single_post_date(); ?><?php single_post_author(); ?>
-       </p>
+       </p> -->
      </div>
     </div>
 </div>

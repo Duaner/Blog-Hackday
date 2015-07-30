@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/assets/main.css">
     <link rel="stylesheet" href="/assets/blog.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
 
     <script src="/assets/vendor/jquery-1.11.2.min.js"></script> 
     <script src="//use.typekit.net/qby6wbi.js"></script>
@@ -24,6 +25,6 @@
     </div>
 
     <div class="main" <?= the_wio_attributes(); ?>>
-        <div class="logo"><img src="assets/images/logo.png" alt=""></div>
+        <a href="./" class="logo"><img src="assets/images/logo.png" alt=""></a>
 
         <a id="menu-hamburger" href="#right-panel"></a>

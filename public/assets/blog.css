@@ -23,6 +23,13 @@ a {
   top: 125px;
   height: 60px;
   width: 60px;
+  opacity: 0.65;
+  -webkit-transition: all 2s cubic-bezier(0.025, 0.970, 0.395, 1.000);
+          transition: all 2s cubic-bezier(0.025, 0.970, 0.395, 1.000);
+}
+
+.logo img:hover {
+  opacity: 1;
 }
 
 .blog-main h1, .blog-main .h1,
