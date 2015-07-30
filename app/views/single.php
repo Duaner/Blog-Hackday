@@ -59,102 +59,97 @@
 
 <body>
 
-
-    <div id="right-panel">
-
-        <?php get_sidebar(); ?>
-
-    </div>
-
     <div class="main" <?= the_wio_attributes(); ?>>
-        <div class="logo"><img src="/assets/images/logo.png" alt=""></div>
+        <a href="/" class="logo"><img src="/assets/images/logo.png" alt=""></a>
         <a id="menu-hamburger" href="#right-panel"></a>
 
+        <?php $headerImageUrl = post_thumbnail_url() ? post_thumbnail_url() : (the_blankimage() ? the_blankimage()->getUrl() : ''); ?>
 
+        <div class="blog-header blog-post" style="background:<?= getColor(); ?>">
 
-<?php
+            <!--<div class="wrapper">
+              <div class="container">
 
-  $headerImageUrl = post_thumbnail_url() ? post_thumbnail_url() : (the_blankimage() ? the_blankimage()->getUrl() : '');
+               <?= single_post_title(); ?>
 
-?>
+               <p class="description">
+                 <?php single_post_shortlede(); ?>
+               </p>
 
-<div class="blog-header single" style="background:<?= getColor(); ?>">
+               <!-- <p class="meta">
+                 <?php single_post_date(); ?><?php single_post_author(); ?>
+               </p> ->
+             </div>
+            </div>-->
 
+            <div class="container">
+              <div class="left">
+                <h3 class="blog-post-name"><?= project_name(); ?></h3>
+                <?= single_post_title(); ?>
+                <?php single_post_shortlede(); ?>
+              </div>
 
-    <div class="wrapper">
-      <div class="container">
+              <div class="right">
+                <img src="<?= imgBandeau(); ?>" alt="">
+              </div>
+            </div>
+        </div>
 
-       <?= single_post_title(); ?>
+        <img class="main_img animation-loading" src="<?= $headerImageUrl ? $headerImageUrl : '' ?>"/>
 
-       <p class="description">
-         <?php single_post_shortlede(); ?>
-       </p>
+        <div class="blog-main single container">
 
-       <!-- <p class="meta">
-         <?php single_post_date(); ?><?php single_post_author(); ?>
-       </p> -->
-     </div>
-    </div>
-</div>
+            <?php page_content(); ?>
 
+            <?php include('social.php'); ?> 
 
-<img id="main_img" src="<?= $headerImageUrl ? $headerImageUrl : '' ?>"/>
+        </div>
 
+        <?php endwhile; ?>
 
-<div class="blog-main single container">
+        <footer class="blog-footer single">
 
-    <?php page_content(); ?>
+            <?php if (previous_post_link_url()) : ?>
 
-    <?php include('social.php'); ?> 
+              <a href="<?=previous_post_link_url()?>" class="previous">
 
-</div>
+                <span class="label">Previous project</span>
 
-<?php endwhile; ?>
+                <p class="title"><?=previous_post_link_title()?></p>
 
-<footer class="blog-footer single">
+              </a>
 
-    <?php if (previous_post_link_url()) : ?>
+            <?php endif ?>
 
-      <a href="<?=previous_post_link_url()?>" class="previous">
+            <a class="menu" href="/blog">Home</a>
 
-        <span class="label">Previous project</span>
+            <?php if (next_post_link_url()) : ?>
 
-        <p class="title"><?=previous_post_link_title()?></p>
+              <a href="<?=next_post_link_url()?>" class="next">
 
-      </a>
+                <span class="label">Next project</span>
 
-    <?php endif ?>
+                <p class="title"><?=next_post_link_title()?></p>
 
-    <a class="menu" href="/blog">Home</a>
+              </a>
 
-    <?php if (next_post_link_url()) : ?>
+            <?php endif ?>
 
-      <a href="<?=next_post_link_url()?>" class="next">
+        </footer>
 
-        <span class="label">Next project</span>
+    <!-- Hamburger menu -->
+    <script src="/assets/vendor/jquery.panelslider.js"></script>
 
-        <p class="title"><?=next_post_link_title()?></p>
+    <script type="text/javascript">
 
-      </a>
+      $(document).ready(function() {
+        $('#menu-hamburger').panelslider({side: 'right', duration: 200 });
+      });
 
-    <?php endif ?>
+    </script>
 
-</footer>
-
-<!-- Hamburger menu -->
-<script src="/assets/vendor/jquery.panelslider.js"></script>
-
-<script type="text/javascript">
-
-  $(document).ready(function() {
-    $('#menu-hamburger').panelslider({side: 'right', duration: 200 });
-  });
-
-</script>
-
-<!-- Handle footer -->
-<script src="/assets/blog.js"></script>
+    <!-- Handle footer -->
+    <script src="/assets/blog.js"></script>
 
 </body>
-
 </html>

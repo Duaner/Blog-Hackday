@@ -1,12 +1,6 @@
 <?php get_header() ?>
 
-<?php
-
-  $headerImageUrl = blog_home_image_url() ? blog_home_image_url() : (the_blankimage() ? the_blankimage()->getUrl() : '');
-
-?>
-
-<div class="blog-header home" style="<?= $headerImageUrl ? 'background-image: url('.$headerImageUrl.')' : '' ?>">
+<div class="blog-header home">
 
   <div class="wrapper">
 
