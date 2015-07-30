@@ -108,6 +108,24 @@ function previous_post_link_url()
     return;
 }
 
+function previous_post_color()
+{
+    global $WPGLOBAL, $loop;
+    $prismic = $WPGLOBAL['prismic'];
+    $previous = $prismic->get_prev_post($loop->current_post()->getId());
+
+    return $previous->getColor('post.color')->getHexValue();
+}
+
+function next_post_color()
+{
+    global $WPGLOBAL, $loop;
+    $prismic = $WPGLOBAL['prismic'];
+    $previous = $prismic->get_next_post($loop->current_post()->getId());
+
+    return $previous->getColor('post.color')->getHexValue();
+}
+
 function previous_post_link($format = '&laquo; %link', $link = '%title', $in_same_term = false, $excluded_terms = '', $taxonomy = 'category')
 {
     $url = previous_post_link();

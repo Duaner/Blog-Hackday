@@ -44,11 +44,8 @@
       }
 
       .links .demo,
-      .links .repo {
-        color: <?= getColor(); ?>;
-      }
-
-      .links .repo {
+      .links .repo,
+      .blog-footer.single .title {
         color: <?= getColor(); ?>;
       }
     </style>
@@ -113,7 +110,7 @@
 
             <?php endif ?>
 
-            <a class="menu" href="/blog">Home</a>
+            <a class="menu" href="/">Home</a>
 
             <?php if (next_post_link_url()) : ?>
 

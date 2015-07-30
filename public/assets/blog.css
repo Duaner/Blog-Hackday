@@ -154,20 +154,6 @@ pre, ul {
   background-color: #E72B1E;
 }
 
-.blog-header.home h1 > a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 100%;
-  display: inline-block;
-  background: #28303B;
-  height: 6px;
-  z-index: -1;
-  -webkit-transition: all .6s cubic-bezier(0.025, 0.970, 0.395, 1.000);
-          transition: all .6s cubic-bezier(0.025, 0.970, 0.395, 1.000);
-}
-
 .blog-header.home h1 strong {
   color: #E72B1E;
   display: block;
@@ -532,8 +518,37 @@ pre, ul {
   max-width: 46vw;
 }
 
-.blog-footer.single a .label, .blog-footer.single a i {
-  color: #B4B4B4;
+.blog-footer.single .label {
+  color: #adadad;
+}
+
+.blog-footer.single .menu {
+  color: #6F6F6F;
+  -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+}
+
+.blog-footer.single .menu:hover {
+  color: #515151;
+}
+
+.blog-footer.single .previous .label,
+.blog-footer.single .next .label {
+  -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+}
+
+.blog-footer.single .previous .label:hover,
+.blog-footer.single .next .label:hover {
+  color: #6F6F6F;
+}
+
+.blog-footer.single .previous .label::before {
+  margin-right: 5px !important;
+}
+
+.blog-footer.single .next .label::after {
+  margin-left: 5px !important;
 }
 
 .blog-footer.single a p {
