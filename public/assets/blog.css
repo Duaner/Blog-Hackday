@@ -96,8 +96,8 @@ pre, ul {
 
 .blog-header h1 {
   font-family: "proxima-nova", Arial, sans-serif;
-  font-size: 70px;
-  line-height: 72px !important;
+  font-size: 62px;
+  line-height: 65px !important;
   font-weight: 300;
 }
 
@@ -384,12 +384,10 @@ pre, ul {
   display: block;
   font-size: 62px;
   color: #FFFFFF;
-  line-height: 72px !important;
   font-weight: 300;
 }
 
 .blog-post-title h1 {
-  line-height: 72px !important;
 }
 
 .blog-post-name {
@@ -542,9 +540,9 @@ pre, ul {
   }
 
   100% {
-    -webkit-transform: translateY(-40px);
-    -moz-transform: translateY(-40px);
-    transform: translateY(-40px);
+    -webkit-transform: translateY(-25px);
+    -moz-transform: translateY(-25px);
+    transform: translateY(-25px);
   }
 }
 
@@ -556,9 +554,9 @@ pre, ul {
   }
 
   100% {
-    -webkit-transform: translateY(-40px);
-    -moz-transform: translateY(-40px);
-    transform: translateY(-40px);
+    -webkit-transform: translateY(-25px);
+    -moz-transform: translateY(-25px);
+    transform: translateY(-25px);
   }
 }
 
@@ -570,9 +568,9 @@ pre, ul {
   }
 
   100% {
-    -webkit-transform: translateY(-40px);
-    -moz-transform: translateY(-40px);
-    transform: translateY(-40px);
+    -webkit-transform: translateY(-25px);
+    -moz-transform: translateY(-25px);
+    transform: translateY(-25px);
   }
 }
 
@@ -601,6 +599,8 @@ pre, ul {
 
 .blog-main.single p {
   margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 35px;
 }
 
 .blog-main.single li {
@@ -753,8 +753,8 @@ pre, ul {
 @media screen and (min-width: 768px) {
 
   h1 {
-    line-height: 67px;
-    font-size: 70px; 
+    line-height: 65px;
+    font-size: 62px; 
   }
 
   .blog-header h1{
@@ -1037,4 +1037,75 @@ pre, ul {
     width: 530px;
   }
 }
+
+.mouse_scroll {
+  display: block;
+  width: 24px;
+  height: 100px;
+  position: absolute;
+  bottom: -120px;
+}
+
+.mouse
+{
+  height: 33px;
+  width: 20px;
+  border-radius: 14px;
+  transform: none;
+  border: 2px solid white;
+  top: 0px;
+}
+
+.wheel
+{
+  height: 5px;
+  width: 2px;
+  display: block;
+  margin: 5px auto;
+  background: white;
+  position: relative;
+  
+  height: 4px;
+  width: 4px;
+  border: 2px solid #fff;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  
+
+}
+
+.wheel
+{
+  -webkit-animation: mouse-wheel 0.6s linear infinite;
+  -moz-animation: mouse-wheel 0.6s linear infinite;
+}
+
+
+
+@-webkit-keyframes mouse-wheel
+{
+   0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+
+@-moz-keyframes mouse-wheel
+{
+  0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+
 
