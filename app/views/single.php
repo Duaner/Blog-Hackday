@@ -117,7 +117,7 @@
 
       <a href="<?=previous_post_link_url()?>" class="previous">
 
-        <span class="label">Previous article</span>
+        <span class="label">Previous project</span>
 
         <p class="title"><?=previous_post_link_title()?></p>
 
@@ -131,7 +131,7 @@
 
       <a href="<?=next_post_link_url()?>" class="next">
 
-        <span class="label">Next article</span>
+        <span class="label">Next project</span>
 
         <p class="title"><?=next_post_link_title()?></p>
 
