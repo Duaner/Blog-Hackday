@@ -54,26 +54,17 @@
 
         <div class="blog-header blog-post" style="background:<?= getColor(); ?>">
 
-            <!--<div class="wrapper">
-              <div class="container">
-
-               <?= single_post_title(); ?>
-
-               <p class="description">
-                 <?php single_post_shortlede(); ?>
-               </p>
-
-               <!-- <p class="meta">
-                 <?php single_post_date(); ?><?php single_post_author(); ?>
-               </p> ->
-             </div>
-            </div>-->
 
             <div class="container">
               <div class="left">
                 <h3 class="blog-post-name"><?= project_name(); ?></h3>
                 <?= single_post_title(); ?>
                 <?php single_post_shortlede(); ?>
+                <div class="mouse_scroll">
+                  <div class="mouse">
+                    <div class="wheel"></div>
+                  </div>
+                </div>
               </div>
 
               <div class="right">
