@@ -19,8 +19,8 @@ a {
 .logo img {
   position: fixed;
   z-index: 1000;
-  left: 125px;
-  top: 125px;
+  left: 90px;
+  top: 90px;
   height: 60px;
   width: 60px;
   opacity: 0.65;
@@ -38,9 +38,12 @@ a {
 .blog-main h4, .blog-main .h4,
 .blog-main h5, .blog-main .h5,
 .blog-main h6, .blog-main .h6 {
-  text-align: left;
   font-family: "proxima-nova", Arial, sans-serif;
   margin-bottom: 20px;
+}
+
+.blog-main h1{
+  text-align: left;
 }
 
 pre, ul {
@@ -325,6 +328,7 @@ pre, ul {
 .blog-post .shortlede {
   display: inline-block;
   font-family: 'Lora', serif;
+  padding-top: 20px;
   color: #fff;
 }
 
@@ -844,8 +848,8 @@ pre, ul {
   }
 
   .blog-main.single .block-quotation {
-    width: 130%;
-    margin: 40px -15%;
+    width: 80%;
+    margin: 40px 10%;
     font-size: 30px;
     padding: 20px 0;
     line-height: 44px;
