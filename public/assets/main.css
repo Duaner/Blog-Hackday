@@ -265,13 +265,42 @@ a {
           transform: scale(1.1);
 }
 
-.main > .wio-link {
+.single-post .main > .wio-link {
+  position: fixed;
+  left: 102px !important;
+  top: 270px !important;
+  z-index: 9999;
+  height: 35px !important;
+  width: 35px !important;
+  line-height: 35px;
+  background: #fff !important;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+  border-radius: 100%;
+  z-index: 100;
+  text-align: center;
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
           transition: transform 0.2s ease-in-out;
-  z-index: 2;
-  border-radius: 50%;
-  background: #FFF !important;
-  box-shadow: 0 0 1px 0 black;
+}
+
+.blog-post > .wio-link {
+  position: absolute;
+  right: 100px !important;
+  top: 100px !important;
+  z-index: 9999;
+  height: 35px !important;
+  width: 35px !important;
+  line-height: 35px;
+  background: #fff !important;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+  border-radius: 100%;
+  z-index: 100;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+          transition: transform 0.2s ease-in-out;
 }
 
 .main > .wio-link img {

@@ -42,14 +42,27 @@
         font-size: 30px;
         font-family: "proxima-nova", Arial, sans-serif;
       }
+
+      .links .demo,
+      .links .repo {
+        color: <?= getColor(); ?>;
+      }
+
+      .links .repo {
+        color: <?= getColor(); ?>;
+      }
     </style>
 </head>
 
-<body>
+<body class="single-post">
 
     <div class="main" <?= the_wio_attributes(); ?>>
         <a href="/" class="logo"><img src="/assets/images/logo.png" alt=""></a>
-        <a id="menu-hamburger" href="#right-panel"></a>
+
+        <div class="links">
+            <a href="" class="icon ion-at demo"></a>
+            <a href="" class="icon ion-social-octocat repo"></a>
+        </div>
 
         <?php $headerImageUrl = post_thumbnail_url() ? post_thumbnail_url() : (the_blankimage() ? the_blankimage()->getUrl() : ''); ?>
 
