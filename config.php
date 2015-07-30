@@ -10,7 +10,7 @@
 /*
  * Change this for the URL of your repository.
  */
-define('PRISMIC_URL', 'https://hackdayblog.prismic.io/api');
+define('PRISMIC_URL', 'https://hackdayblog.cdn.prismic.io/api');
 define('PRISMIC_TOKEN', null);
 
 /*
