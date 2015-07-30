@@ -7,10 +7,14 @@
     <link rel="stylesheet" href="/assets/reset.css">
     <link rel="stylesheet" href="/assets/common.css">
     <link rel="stylesheet" href="/assets/main.css">
+    <link rel="stylesheet" href="/assets/page.css">
     <link rel="stylesheet" href="/assets/blog.css">
     <link rel="stylesheet" href="/assets/social.css">
     <link rel="stylesheet" href="/assets/font.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="//use.typekit.net/qby6wbi.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
 
     <?php while ( have_posts() ) : the_post(); ?>
       <?php include('social-meta.php'); ?> 
@@ -46,6 +50,7 @@
         color: <?= getColor(); ?> ;
         text-transform: uppercase;
         font-size: 30px;
+        font-family: "proxima-nova", Arial, sans-serif;
       }
 
     </style>
@@ -61,7 +66,7 @@
     </div>
 
     <div class="main" <?= the_wio_attributes(); ?>>
-
+        <div class="logo"><img src="/assets/images/logo.png" alt=""></div>
         <a id="menu-hamburger" href="#right-panel"></a>
 
 
