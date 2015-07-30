@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/assets/common.css">
     <link rel="stylesheet" href="/assets/main.css">
     <link rel="stylesheet" href="/assets/blog.css">
+    <link rel="stylesheet" href="/assets/ionicons.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
 
