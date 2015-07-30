@@ -48,7 +48,7 @@ pre, ul {
 }
 
 .blog-main.single.container {
-  padding: 70px 26px 26px 26px;
+  padding: 70px 0px 26px 0px;
 }
 
 .container {
@@ -59,6 +59,7 @@ pre, ul {
 .blog-main {
   text-align: justify;
   line-height: 1.5;
+  max-width: none;
 }
 
 .blog-main .value {
