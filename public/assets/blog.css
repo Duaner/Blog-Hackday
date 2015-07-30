@@ -15,34 +15,37 @@ a {
   background-position: 0 23px;
 }
 
-.icon {
+.links {
   position: fixed;
   left: 102px;
   top: 170px;
+  z-index: 100;
+}
+
+.links li {
   height: 35px;
   width: 35px;
   line-height: 35px;
+  border-radius: 100%;
   background: #fff;
-  color: ;
+  margin-bottom: 20px;
+  text-align: center;
   -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
   -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
-  border-radius: 100%;
-  z-index: 100;
-  text-align: center;
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
           transition: transform 0.2s ease-in-out;
 }
 
-.icon:hover {
+.links li .icon {
+  display: block;
+  line-height: 35px;
+}
+
+.links li:hover {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
-}
-
-.repo {
-  line-height: 38px;
-  margin-top: 50px;
 }
 
 .logo img {

@@ -43,8 +43,7 @@
         font-family: "proxima-nova", Arial, sans-serif;
       }
 
-      .links .demo,
-      .links .repo,
+      .links .icon,
       .blog-footer.single .title {
         color: <?= getColor(); ?>;
       }
@@ -52,14 +51,41 @@
 </head>
 
 <body class="single-post">
+    <?php
+
+      function links() {
+        global $loop;
+        $doc = $loop->current_post();
+        $array = array();
+
+        if ($doc && $doc->getGroup('post.links')) {
+          foreach ($doc->getGroup('post.links')->getArray() as $item) {
+            $socialUrl = $item->getText('url');
+            $socialName = $item->getText('social');
+            $icon;
+
+            if ($socialName == 'Github') {
+              $icon = 'social-octocat';
+            } elseif ($socialName == 'Demo') {
+              $icon = 'at';
+            } elseif ($socialName == 'Bitbucket') {
+              $icon = 'folder';
+            }
+
+            array_push($array, '<li><a title="' . $socialName . '" class="icon ion-' . strtolower($icon) . '" href="' . $socialUrl . '"></a></li>');
+          }  
+        }
+
+        return implode('', $array);
+      }
+    ?>
 
     <div class="main" <?= the_wio_attributes(); ?>>
         <a href="/" class="logo"><img src="/assets/images/logo.png" alt=""></a>
 
-        <div class="links">
-            <a href="" class="icon ion-at demo"></a>
-            <a href="" class="icon ion-social-octocat repo"></a>
-        </div>
+        <ul class="links">
+          <?= links() ? links() : '' ?>
+        </ul>
 
         <?php $headerImageUrl = post_thumbnail_url() ? post_thumbnail_url() : (the_blankimage() ? the_blankimage()->getUrl() : ''); ?>
 
