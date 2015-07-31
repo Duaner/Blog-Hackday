@@ -42,12 +42,8 @@ class StarterKitLinkResolver extends LinkResolver
                 return '/category/'.$link->getUid();
             }
             if ($link->getType() == 'post') {
-                $date = $link->getDate('post.date');
-                $year = $date ? $date->asDateTime()->format('Y') : '0';
-                $month = $date ? $date->asDateTime()->format('m') : '0';
-                $day = $date ? $date->asDateTime()->format('d') : '0';
 
-                return '/blog/'.$year.'/'.$month.'/'.$day.'/'.urlencode($link->getUid());
+                return '/'.urlencode($link->getUid());
             }
 
             if ($link->getType() == 'page') {

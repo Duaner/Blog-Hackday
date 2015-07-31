@@ -512,7 +512,7 @@ $app->get('/disqus/posts/list', function () use ($app, $prismic) {
 
 
 // Post
-$app->get('/blog/:year/:month/:day/:uid', function ($year, $month, $day, $uid) use ($app,$prismic) {
+$app->get('/:uid', function ($uid) use ($app,$prismic) {
 
     $fetch = array(
         'post.date',
