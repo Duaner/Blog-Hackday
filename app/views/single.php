@@ -47,6 +47,13 @@
       .blog-footer.single .title {
         color: <?= getColor(); ?>;
       }
+
+      .blog-main.single a { color: <?= getColor(); ?>; }
+
+      .button:not([disabled]):hover {
+        background-color: <?= getColor(); ?>;
+        border-color: <?= getColor(); ?>;
+      }
     </style>
 </head>
 
