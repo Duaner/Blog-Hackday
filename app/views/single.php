@@ -89,9 +89,7 @@
 
         <?php $headerImageUrl = post_thumbnail_url() ? post_thumbnail_url() : (the_blankimage() ? the_blankimage()->getUrl() : ''); ?>
 
-        <div class="blog-header blog-post" style="background:<?= getColor(); ?>">
-
-
+        <div class="blog-header blog-post <?= get_the_classes_list() ?>" style="background:<?= getColor(); ?>">
             <div class="container">
               <div class="left">
                 <h3 class="blog-post-name"><?= project_name(); ?></h3>

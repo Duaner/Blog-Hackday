@@ -352,6 +352,11 @@ pre, ul {
   transform: translateY(-50%);
 }
 
+.blog-post.right .right img {
+  margin-top: 40px;
+  right: -500px;
+}
+
 .blog-post .shortlede {
   display: inline-block;
   font-family: 'Lora', serif;

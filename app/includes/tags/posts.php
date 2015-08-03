@@ -322,6 +322,11 @@ function get_the_tag_list($before = '', $sep = '', $after = '')
     return '<span class="tags">'.$result.'</span>';
 }
 
+function get_the_classes_list()
+{
+    return implode(" ", get_the_tags());
+}
+
 // Other tags
 
 function single_post()
