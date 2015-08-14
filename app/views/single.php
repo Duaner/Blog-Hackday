@@ -2,7 +2,10 @@
 <html lang="en">
 
 <head>
-    <title><?= project_name() ?> <?= site_title() ?></title>
+    <?php while ( have_posts() ) : the_post(); ?>
+      <title><?= project_name(); ?> — Hackday at zengularity</title>
+    <?php endwhile; ?>
+
     <link rel="alternate" type="application/rss+xml" title="<?= site_title() ?>'s Feed" href="/feed" />
     <link rel="stylesheet" href="/assets/reset.css">
     <link rel="stylesheet" href="/assets/common.css">

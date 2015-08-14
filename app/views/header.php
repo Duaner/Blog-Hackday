@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title><?= single_post_title() ?> <?= site_title() ?></title>
+    <title>Hackday at zengularity</title>
     <link rel="alternate" type="application/rss+xml" title="<?= site_title() ?>'s Feed" href="/feed" />
     <link rel="stylesheet" href="/assets/reset.css">
     <link rel="stylesheet" href="/assets/common.css">
