@@ -80,6 +80,7 @@ a {
 
 .blog-main h1{
   text-align: left;
+  font-size:62px;
 }
 
 pre, ul {
@@ -87,7 +88,7 @@ pre, ul {
 }
 
 .blog-main.single.container {
-  padding: 70px 0px 26px 0px;
+  padding: 0px 0px 26px 0px;
 }
 
 .container {
@@ -149,8 +150,13 @@ pre, ul {
           transition: all .6s cubic-bezier(0.025, 0.970, 0.395, 1.000);
 }
 
+.blog-header.home a{
+  opacity: 0.9;
+  color: #fff;
+}
+
 .blog-header.home h1 a:hover {
-  color: #E72B1E;
+  opacity: 0.9;
 }
 
 .blog-header.home h1 a:hover::after {
@@ -387,6 +393,11 @@ pre, ul {
   font-size: 62px;
   color: #FFFFFF;
   font-weight: 300;
+}
+
+.blog-post-title:hover{
+  color: #fff;
+  opacity: 0.;
 }
 
 .blog-post-title h1 {
@@ -688,16 +699,16 @@ pre, ul {
     font-size: 14px;
   }
 
-  h1 {
+  .main h1 {
     font-size: 30px;
   }
 
-  h2 {
+  .main h2 {
     font-size: 20px;
     margin-bottom: 14px;
   }
 
-  h3 {
+  .main h3 {
     font-size: 18px;
     margin-bottom: 14px;
   }
