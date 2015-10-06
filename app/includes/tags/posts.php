@@ -374,7 +374,7 @@ function getColor(){
     if (!$doc) {
         return;
     }
-    return $doc->getColor('post.color')->getHexValue();
+    return (string)$doc->getColor('post.color')->getHexValue();
 }
 
 function single_post_shortlede_text()
