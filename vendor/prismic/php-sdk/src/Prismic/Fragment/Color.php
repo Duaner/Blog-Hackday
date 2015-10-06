@@ -67,6 +67,6 @@ class Color implements FragmentInterface
      */
     public function getHexValue()
     {
-        return $this->hex;
+        return (string)$this->hex;
     }
 }
