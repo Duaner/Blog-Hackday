@@ -10,6 +10,7 @@
   </div>
 </div>
 
+
 <div class="blog-main">
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     <?php get_template_part('content'); ?>
@@ -17,5 +18,6 @@
     <p>Sorry, no posts matched your criteria.</p>
 <?php endif; ?>
 </div>
+<div id="containerAjax"></div>
 
 <?php get_footer() ?>

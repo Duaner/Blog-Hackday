@@ -87,7 +87,7 @@
       }
     ?>
 
-    <div class="main" <?= the_wio_attributes(); ?>>
+    <div id="main" <?= the_wio_attributes(); ?>>
         <a href="/" class="logo"><img src="/assets/images/logo.png" alt=""></a>
 
         <ul class="links">
@@ -115,10 +115,10 @@
             </div>
         </div>
 
-        <img class="main_img animation-loading" src="<?= $headerImageUrl ? $headerImageUrl : '' ?>"/>
+        
 
         <div class="blog-main single container">
-
+          <img class="main_img animation-loading" src="<?= $headerImageUrl ? $headerImageUrl : '' ?>"/>
             <?php page_content(); ?>
 
             <?php include('social.php'); ?> 
