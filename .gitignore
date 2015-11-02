@@ -2,3 +2,4 @@
 build/
 dist/
 blogtemplate-latest.zip
+npm-debug.log
